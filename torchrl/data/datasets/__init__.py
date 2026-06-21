@@ -8,6 +8,7 @@ from __future__ import annotations
 # Import classes that don't have external dependencies
 from .atari_dqn import AtariDQNExperienceReplay
 from .common import BaseDatasetExperienceReplay
+from .utils import load_dataset
 
 # Conditional imports for classes with external dependencies
 try:
@@ -48,6 +49,7 @@ except ImportError:
 __all__ = [
     "AtariDQNExperienceReplay",
     "BaseDatasetExperienceReplay",
+    "load_dataset",
     "D4RLExperienceReplay",
     "MinariExperienceReplay",
     "GenDGRLExperienceReplay",

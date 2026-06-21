@@ -47,6 +47,8 @@ from .replay_buffers import (
     ListStorageCheckpointer,
     Nested2TED,
     NestedStorageCheckpointer,
+    OfflineToOnlineReplayBuffer,
+    prefill_replay_buffer,
     PrioritizedReplayBuffer,
     PrioritizedSampler,
     PrioritizedSliceSampler,
@@ -132,6 +134,7 @@ __all__ = [
     "Nested2TED",
     "NestedStorageCheckpointer",
     "NonTensor",
+    "OfflineToOnlineReplayBuffer",
     "OneHot",
     "PairwiseDataset",
     "PrioritizedReplayBuffer",
@@ -186,4 +189,5 @@ __all__ = [
     "contains_lazy_spec",
     "create_infinite_iterator",
     "get_dataloader",
+    "prefill_replay_buffer",
 ]
